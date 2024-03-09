@@ -30,18 +30,13 @@ console.log(result)
 result=division(100, 2)
 console.log(result)
 
-function hello()
+
+function myname(Name)
 {
-console.log("Hello")
+   console.log("Hello " +Name)
 }
 
-function myname()
-{
-   console.log("Rahul")
-}
-
-hello()
-myname()
+myname("Rahul")
 
 
 
