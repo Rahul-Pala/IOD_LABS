@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+ <title>Index.html</title>
+
+ <meta charset="UTF-8">
+  <meta name="description" content="Index HTML Module 2 Lab 1">
+  <meta name="keywords" content="HTML">
+  <meta name="author" content="Rahul Pala">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+
+</head>
+
+   <body>
+    <h1>My HTML learning journey</h1>
+    <article>
+    <h2>Learning HTML elements - Div, span, p, pre, ul, ol, li, article</h2>
+    <div>HTML</div>
+    
+    <div> CSS</div>
+
+    <div>Javascript</div>
+
+    <span>Text inside span1</span>
+
+    <span>Text inside span2</span>
+
+    <span>Text inside span3</span>
+
+    <p>
+      p represents paragraph     without preserving      spacing
+      </p>
+      <pre>
+      Text in         a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks
+      </pre>
+
+    </article>
+
+    <article>
+      <h2>HTML elements - Tables - table, thead, tbody, tr, td, th</h2>
+   
+
+    <table>
+      <thead>
+      <tr>
+          <th colspan="2">First header</th>
+          <th>Second header</th>
+      </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>First cell - first row</td>
+              <td>Second cell - first row</td>
+              <td>third cell - first row</td>
+          </tr>
+          <tr>
+            <td rowspan="2">First cell - second row</td>
+            <td>Second cell - second row</td>
+            <td>Third cell - second row</td>
+        </tr>
+        <tr>
+          <td>First cell - third row</td>
+          <td>Second cell - third row</td>
+        </tr>
+          
+      </tbody>
+  </table>
+  
+  </article>
+    <article>
+      <h2>HTML elements - img, video, audio</h2>
+
+      <img src="https://picsum.photos/400/400" alt="This is an image" width="300" height="300">
+      <img src="/assets/html_lab_image.jpg" alt="This is an HTML Lab image" width="300" height="300"> <!-- Help -->
+
+      <video width="250" autoplay> <!--Help. video does not play and autoplay does not work-->
+        <source src="/assets/flower.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    
+    <figure>
+      <audio controls src="/assets/t-rex-roar.mp3"> <!--Help. audio does not play, figure and figcaption attribute, autoplay-->
+      <figcaption>Fig.1 audio lab 1</figcaption>
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+    </figure>
+  </article>
+
+      <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+        <a href="http://127.0.0.1:5500/Module_2/Lab%202.1/src/form.html">Link to the Home Page</a>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <footer>Copyright &copy; 2024</footer>
+   </body>
+</html>

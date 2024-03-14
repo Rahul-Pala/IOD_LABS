@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="/">Home</a>
+      <a href="http://127.0.0.1:5500/Module_2/Lab%202.1/src/index.html">Link to Index.html page</a> <!--Help. Is this correct?-->
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+    <div>
+      <label for="Firstname">First Name</label>
+      <input type="text" name="Firstname" id="Firstname"/>
+    </div>  
+    <div>
+      <label for="Lastname">Last Name</label>
+      <input type="text" name="Lastname" id="Lastname"/>
+    </div>
+    <div>
+      <label for="html">HTML</label>
+      <input type="radio" name="html" id="html" value="HTML"/>
+      <label for="css">CSS</label>
+      <input type="radio" name="css" id="css" value="CSS"/>
+      <label for="Javascript">Javascript</label>
+      <input type="radio" name="Javascript" id="Javascript" value="Javascript"/>
+    </div>
+    <div>
+      <label for="Toyota">Toyota</label>
+      <input type="checkbox" name="Toyota" id="Toyota" value="Toyota"/>
+      <label for="BMW">BMW</label>
+      <input type="checkbox" name="BMW" id="BMW" value="BMW"/>
+      <label for="honda">Honda</label>
+      <input type="checkbox" name="honda" id="honda" value="honda"/>
+    </div>
+
+    <label for="cars">Please choose the brand of car you own</label>
+    <select name="cars" id="cars">
+      <option value="Toyota">Toyota</option>
+      <option value="BMW">BMW</option>
+      <option value="Honda">Honda</option>
+    </select>
+
+    <button type="submit">Submit form</button>
+    <input type="submit">
+
+    </form>
+  </main>
+
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

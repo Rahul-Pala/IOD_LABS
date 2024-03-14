@@ -1,0 +1,77 @@
+article {   /* I. Selectors */ 
+    /* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.style-me1{
+    color: red;
+}
+#style-me2{
+    color: blue;
+}
+.style-me1 #style-me2{ /* Help*/
+    color: purple;
+}
+
+.my-descendants-are-styled p { /* Put styles for questions 2.1 and 2.2 here */
+
+    background-color: red;
+}   
+
+.my-children-are-styled > p {
+    background-color: lightgreen;
+}
+
+
+/* II. Box model and common properties */
+.box {                                    /* Put styles for questions 1-8 here */
+    background-color: tomato;
+}   
+
+.box {
+    margin: 40px;
+    padding: 20px;
+    width: 95%; /*help*/
+    height: 95% !important; /*help*/
+    border: 10px solid rgb(39, 235, 29);
+    outline: 10px solid blue;
+    border-radius: 1em;
+    background-image: url("./assets-20240311T010714Z-001/assets/images/img1.png")
+}
+
+
+
+
+
+/* III. Positioning */
+.position-absolute {      /* Put styles for questions 1-3 here */
+position:absolute;
+top: 0px;
+right: 50px;
+background-color: aqua;
+}    
+
+.position-relative{
+    position:relative;
+    background: goldenrod;
+}
+
+.position-sticky {
+    position:sticky;
+    background-color: grey;
+    top: 0px;
+
+}
+
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
