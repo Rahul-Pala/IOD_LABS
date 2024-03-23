@@ -36,7 +36,9 @@ article {   /* I. Selectors */
     height: 95% !important; /*help*/
     border: 10px solid rgb(39, 235, 29);
     outline: 10px solid blue;
-    border-radius: 1em;
+    border-radius: 50%;
+    box-sizing: border-box ;
+    overflow: auto;
     background-image: url("./assets-20240311T010714Z-001/assets/images/img1.png")
 }
 

@@ -4,6 +4,20 @@ body{
     font-size: 16px;
     background-color: rgb(69, 227, 227);
 }
+@media only screen and (max-width: 600px) {
+    body {
+         font-size: 10px;
+        }
+    
+      }
+      @media only screen and (min-width: 600px) and( max-width: 1400px) {
+        body {
+             font-size: 28px;
+             background-color: bisque;
+            }
+        
+          }
+
 .container{
     border: 3px solid black;
     margin: 5px;
@@ -46,6 +60,10 @@ a:hover{
     justify-content: space-around;
     background-color: lightpink;
     height: 250px;
+}
+
+#picture{
+    height: 50vh;
 }
 
 .flexcontainer1 > div{                                         
