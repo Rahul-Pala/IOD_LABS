@@ -202,6 +202,9 @@ function Person(name, age) {
     this.age = age;
     this.human = true;
     }
+
+    //Part a
+    let Person1 = new Person 
     
 
 
