@@ -33,24 +33,38 @@
  </template >
  
  <div id="card-list" ></div>
- </body>
-</html>
+ 
 
 <script>
-    function addCard() {
+
+const data = [{name: 'bob', age: 23},
+{name: 'alice', age: 39}]
+
+    function addCard(text, body) {
     // clone the template
     const template = 
     document.getElementById("card-template")
     .content.cloneNode(true);
     // populate the template
     template.querySelector('.card-title').innerText = 
-    'My Card Title';
+    text;
     template.querySelector('.card-text').innerText = 
-    'lorem ipsum ble bla';
+    body;
     // include the populated template into the page
     document.querySelector('#card-list')
     .appendChild(template);
     }
-    addCard();
+    
+   // addCard("custom title","custom text");
+   // addCard("koko","hoho");
+  //  addCard("toto","vovo");  //exercise 1
+
+
+
+data.forEach(item =>addcard(item.name,item.age));
+
 </script>
+
+</body>
+</html>
    
