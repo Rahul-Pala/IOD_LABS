@@ -29,7 +29,7 @@ let multiplication = three * four //12
 let division = three / four //0.75
 let subtraction = three - four //-1
 let lessThan1 = three < four //true
-let lessThan2 = thirty < four //false //HELP
+let lessThan2 = thirty < four //false //its not number comparision, its letters.
 
 console.log(addition)
 console.log(multiplication)
@@ -39,9 +39,9 @@ console.log(lessThan1)
 console.log(lessThan2)
 
 //Question 3
-if (0) console.log('#1 zero is true') //not print - 0
+if (0) console.log('#1 zero is true') //not print - 0 is false
 if ("0") console.log('#2 zero is true') //print - string 
-if (null) console.log('null is true')   //not print - null
+if (null) console.log('null is true')   //not print - null is false
 if (-1) console.log('negative is true') //print - negative number
 if (1) console.log('positive is true')   //print - positive number 
 
@@ -108,24 +108,34 @@ const westley = {
     //Question 7
     const basketballGame = {
         score: 0,
+        fouls: 0,
+        foul() {
+            this.fouls++;
+            return this
+        },
         freeThrow() {
         this.score++;
+        return this
         },
         basket() {
         this.score += 2;
+        return this
         },
         threePointer() {
         this.score += 3;
+        return this
         },
         halfTime() {
         console.log('Halftime score is '+this.score);
+        return this
         },
         fullTime() {
         console.log('Fulltime score is '+this.score)
+        return this
         },
     }
 
-    //basketballGame.basket().freeThrow().basket().threePointer().halfTime();
+    basketballGame.basket().freeThrow().basket().threePointer().halfTime().foul().fullTime()
 
     const basketballgameFouls = {
         fouls: 0,
