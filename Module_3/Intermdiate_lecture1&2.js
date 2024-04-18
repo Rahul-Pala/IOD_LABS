@@ -433,6 +433,26 @@ function makeArray() {
 }
 console.log( makeArray(1, 2, 3) ); // [ 1, 2, 3 ]
 
+//Question 10
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.human = true;
+    }
+
+    //A
+let Person1 = new Person('Rahul', 20)
+
+//B
+let Person2 = new Person('Juliet', 21)
+
+//C
+console.log(Person1)
+console.log(Person2)
+
+
+
+
 
 
 

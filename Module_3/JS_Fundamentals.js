@@ -1,22 +1,24 @@
+
 //Question 1
 
 "" + 1 + 0     //10
 "" - 1 + 0     //-1
 true + false   //true
-!true          //false
-6 / "3"        //2
-"2" * "3"      //6
-4 + 5 + "px"   //9px
+!true          //false (because not true)
+6 / "3"        //2 (string converted to number)
+"2" * "3"      //6 (string converted to number during *)
+4 + 5 + "px"   //9px 
 "$" + 4 + 5    //$45
 "4" - 2        //2
-"4px" - 2      //NaN
-" -9 " + 5     //-9 5
-" -9 " - 5     //-14
-null + 1       //1
-undefined + 1  // NaN
+"4px" - 2      //NaN (px is not a number)
+" -9 " + 5     //-9 5 (addition of string and number will concatenate)
+" -9 " - 5     //-14 (not using + addition sign)
+null + 1       //1 (null + 1 is 1)
+undefined + 1  // NaN (undefined is not a number)
 undefined == null  //true
-undefined === null  //false
+undefined === null  //false (does not match)
 " \t \n" - 2   //-2
+
 
 
 // Question 2
@@ -24,12 +26,12 @@ let three = "3"
 let four = "4"
 let thirty = "30"
 //what is the value of the following expressions?
-let addition = three + four //34
-let multiplication = three * four //12
-let division = three / four //0.75
-let subtraction = three - four //-1
+let addition = three + four //34 (3 and 4 strings concatenate)
+let multiplication = three * four //12 (multiplication)
+let division = three / four //0.75 (division)
+let subtraction = three - four //-1 (subtraction)
 let lessThan1 = three < four //true
-let lessThan2 = thirty < four //false //its not number comparision, its letters.
+let lessThan2 = thirty < four //true //its not number comparision, its letters.
 
 console.log(addition)
 console.log(multiplication)
@@ -46,55 +48,54 @@ if (-1) console.log('negative is true') //print - negative number
 if (1) console.log('positive is true')   //print - positive number 
 
 //Question 4 //HELP
-let a = 2, b = 3;
+/*let a = 2, b = 3;
 let result = `${a} + ${b} is `;
 if (a + b < 10) {
 result += 'less than 10';
 } else {
 result += 'greater than 10';
-}
+} */
 
-let c=3, d=4;  //Question 4 answer
-let Answer1= c * d
-let Answer2= c + d
-console.log(Answer1 < 10 ? 'Result less than 10': 'Result greater than 10');
-console.log(Answer2 < 10 ? 'Result less than 10': 'Result greater than 10');
+//Question 4
+let a = 2, b = 3;
 
+let result = '${a} + ${b} is ' + (a + b <10? "Less than 10" : "Greater than 10")
+console.log(result) //The += oeprater concatenates the result
 
 
 //Question 5
 
-/*function getGreeting(name) {
+function getGreeting(name) {
     return 'Hello ' + name + '!';
     }
-console.log(getGreeting("Rahul")) */
+console.log(getGreeting("Rahul"))
 
-const GetGreeting = function(name)  //A. expression syntax
-    {
-        return 'Hello '  + name + '!';
-    } 
-
-    console.log(GetGreeting("Rahul Pala")) 
-
-const getGreeting = (name) =>  //B Arrow function
-{
-    return 'Hello '  + name + '!';
-}
-console.log(getGreeting("Raoool"))
+//Arrow function
+const getGreetingarrow = (myname) => {
+return `Hello ${myname} !` ;
+};
+console.log(getGreetingarrow("Rahul Pala"))
+    
+//Expression function
+const getExpression = function(yourname) {
+return `Hi ${yourname} !`
+};
+console.log(getExpression("Raooul"))
     
 //Question 6 HELP with B and C
 const westley = {
     name: 'Westley',
     numFingers: 5
     }
-    const rugen = {
+const rugen = {
     name: 'Count Rugen',
     numFingers: 6
     }
-    const inigo = {
+const inigo = {
     firstName: 'Inigo',
     lastName: 'Montoya',
-    greeting(person) { 
+    
+   /* greeting(person) { 
     let greeting = `Hello ${person.name}, my name is ${this.firstName} ${this.lastName}. `;
     console.log(greeting + this.getCatchPhrase(person));
     },
@@ -103,10 +104,29 @@ const westley = {
     }
     }
     inigo.greeting(westley)
-    inigo.greeting(rugen)
+    inigo.greeting(rugen) */
+
+    //Part B
+    /*getCatchPhrase(person) {
+        if (person.numFingers === 6) {
+            return "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.";
+        } else {
+            return 'Nice to meet you.';
+        }
+    } */
+
+    //Part C
+  
+
+
+
+    
+
+    
+
 
     //Question 7
-    const basketballGame = {
+    /*const basketballGame = {
         score: 0,
         fouls: 0,
         foul() {
@@ -153,7 +173,7 @@ const westley = {
 
     
         //modify each of the above object methods to enable function chaining as below:
-        //basketballGame.basket().freeThrow().basket().threePointer().halfTime();
+        //basketballGame.basket().freeThrow().basket().threePointer().halfTime(); */
 
 //Question 8
 const sydney = {
@@ -205,16 +225,11 @@ console.log(cat2)
 
 //let cat2 = {...cat1, name:"kitty"}    //E
 
-//Question 10
 
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-    this.human = true;
-    }
 
-    //Part a
-    let Person1 = new Person 
+
+
+
     
 
 
