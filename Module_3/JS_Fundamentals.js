@@ -57,9 +57,9 @@ result += 'greater than 10';
 } */
 
 //Question 4
-let a = 2, b = 3;
+let a = 2, b = 9;
 
-let result = '${a} + ${b} is ' + (a + b <10? "Less than 10" : "Greater than 10")
+let result = `${a} + ${b} is ` + (a + b <10? "Less than 10" : "Greater than 10")
 console.log(result) //The += oeprater concatenates the result
 
 
@@ -94,39 +94,31 @@ const rugen = {
 const inigo = {
     firstName: 'Inigo',
     lastName: 'Montoya',
-    
-   /* greeting(person) { 
+
+   greeting(person) { 
     let greeting = `Hello ${person.name}, my name is ${this.firstName} ${this.lastName}. `;
     console.log(greeting + this.getCatchPhrase(person));
     },
-    getCatchPhrase(person) {
-    return 'Nice to meet you.';
-    }
-    }
-    inigo.greeting(westley)
-    inigo.greeting(rugen) */
-
     //Part B
-    /*getCatchPhrase(person) {
-        if (person.numFingers === 6) {
-            return "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.";
-        } else {
-            return 'Nice to meet you.';
-        }
-    } */
+    // getCatchPhrase(person) {
+    //     if (person.numFingers === 6) {
+    //         return "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.";
+    //     } else {
+    //         return 'Nice to meet you.';
+    //     }
+    // } 
+    // Part C
+    getCatchPhrase : (person) => {
+       return person.numFingers === 6 ? "Hello. My name is Inigo Montoya. You killed my father. Prepare to die" : 'Nice to meet you.'
+    }
+    }
 
-    //Part C
-  
+    inigo.greeting(westley)
+    inigo.greeting(rugen) 
 
 
-
-    
-
-    
-
-
-    //Question 7
-    /*const basketballGame = {
+  //Question 7
+    const basketballGame = {
         score: 0,
         fouls: 0,
         foul() {
@@ -183,10 +175,15 @@ const sydney = {
     founded: '26 January 1788',
     timezone: 'Australia/Sydney'
     }
-for (let key in sydney) {
-    console.log('Property: ' + key) 
-    console.log('Value: ' + sydney[key])
-}    
+    function getCityInfo(city) {
+        for (let key in city) {
+            console.log('Property: ' + key) 
+            console.log('Value: ' + city[key])
+        }
+        }
+   function testConsoleLog(city) {
+    return city
+   }
 
 const Melbourne = {
     name: "Melbourne",
@@ -194,12 +191,9 @@ const Melbourne = {
     speciality: "Coffee",
     Sports: "Cricket",
 }
-
-for(let key in Melbourne) {
-    console.log("property: " + key)
-    console.log("Value: " + Melbourne[key])
-}
-
+getCityInfo(sydney)
+getCityInfo(Melbourne)
+console.log(testConsoleLog(sydney))
 //Question 9
 let teamSports = ['Hockey', 'Cricket', 'Volleyball'];
 let dog1 = 'Bingo';
