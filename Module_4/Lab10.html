@@ -1,5 +1,5 @@
-//Creating a template :
-//Below is a template for a card with the CSS written alongside.
+<!-- Creating a template : -->
+<!-- Below is a template for a card with the CSS written alongside. -->
 <!DOCTYPE html>
    <html>
       <head>
@@ -21,7 +21,9 @@
      font-size : 2em
       }
  </style>
+
  </head>
+ <script src="script.js"></script>
  <body>
  <template id="card-template" >
  <div class="card">
@@ -33,7 +35,10 @@
  </template >
  
  <div id="card-list" ></div>
- <script>
+ 
+
+<script>
+
 const data = [{name: 'bob', age: 23},
 {name: 'alice', age: 39}]
 
@@ -52,11 +57,16 @@ const data = [{name: 'bob', age: 23},
     .appendChild(template);
     }
     
-   addCard("custom title","custom text");
-   addCard("koko","hoho");
-   addCard("toto","vovo");  //exercise 1
+   // addCard("custom title","custom text");
+   // addCard("koko","hoho");
+  //  addCard("toto","vovo");  //exercise 1
 
-
+  function fetchNews() {
+    fetch('https://fakestoreapi.com/products')
+    .then((response) => response.json())
+    .then((json) => {console.log(json);json.forEach(item =>addCard(item.price,item.price))}); //this works because the function newscars is not defined by let or const
+}
+fetchNews()
 
 data.forEach(item =>addCard(item.name,item.age));
 

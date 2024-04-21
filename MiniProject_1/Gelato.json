@@ -1,0 +1,104 @@
+{
+    "Gelatolist": [
+        {
+          "id": 1,
+          "flavor": "Vanilla",
+          "description": "Classic vanilla gelato with a creamy texture."
+        },
+        {
+          "id": 2,
+          "flavor": "Chocolate",
+          "description": "Rich chocolate gelato made with premium cocoa."
+        },
+        {
+          "id": 3,
+          "flavor": "Strawberry",
+          "description": "Delicious strawberry gelato with real fruit chunks."
+        },
+        {
+          "id": 4,
+          "flavor": "Pistachio",
+          "description": "Smooth pistachio gelato with chopped nuts for texture."
+        },
+        {
+          "id": 5,
+          "flavor": "Hazelnut",
+          "description": "Creamy hazelnut gelato with a nutty flavor."
+        },
+        {
+          "id": 6,
+          "flavor": "Coffee",
+          "description": "Bold coffee-flavored gelato made with freshly brewed espresso."
+        },
+        {
+          "id": 7,
+          "flavor": "Mango",
+          "description": "Refreshing mango gelato with tropical fruit notes."
+        },
+        {
+          "id": 8,
+          "flavor": "Lemon",
+          "description": "Zesty lemon gelato made with fresh lemon juice and zest."
+        },
+        {
+          "id": 9,
+          "flavor": "Raspberry",
+          "description": "Tangy raspberry gelato bursting with fruity flavor."
+        },
+        {
+          "id": 10,
+          "flavor": "Coconut",
+          "description": "Creamy coconut gelato with shredded coconut for texture."
+        },
+        {
+          "id": 11,
+          "flavor": "Caramel",
+          "description": "Indulgent caramel gelato with swirls of rich caramel sauce."
+        },
+        {
+          "id": 12,
+          "flavor": "Banana",
+          "description": "Smooth banana gelato made with ripe bananas."
+        },
+        {
+          "id": 13,
+          "flavor": "Blueberry",
+          "description": "Sweet blueberry gelato packed with juicy blueberries."
+        },
+        {
+          "id": 14,
+          "flavor": "Cookies and Cream",
+          "description": "Classic cookies and cream gelato with chunks of cookie mixed in."
+        },
+        {
+          "id": 15,
+          "flavor": "Peach",
+          "description": "Juicy peach gelato with chunks of ripe peach for added sweetness."
+        },
+        {
+          "id": 16,
+          "flavor": "Tiramisu",
+          "description": "Decadent tiramisu gelato with layers of coffee-soaked ladyfingers and mascarpone."
+        },
+        {
+          "id": 17,
+          "flavor": "Pineapple",
+          "description": "Tropical pineapple gelato with chunks of pineapple for a refreshing taste."
+        },
+        {
+          "id": 18,
+          "flavor": "Mint Chocolate Chip",
+          "description": "Refreshing mint gelato with chocolate chips for a delicious crunch."
+        },
+        {
+          "id": 19,
+          "flavor": "Salted Caramel",
+          "description": "Rich salted caramel gelato with a perfect balance of sweet and salty flavors."
+        },
+        {
+          "id": 20,
+          "flavor": "Red Velvet",
+          "description": "Velvety red velvet gelato with hints of cocoa and cream cheese frosting."
+        }
+      ]
+}
