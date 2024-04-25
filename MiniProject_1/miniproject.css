@@ -59,6 +59,12 @@ p{
     h2{
         color: blue;
     }
+
+.menuword{
+    text-align: center;
+    font-size: 40px;
+    color: wheat;
+}
 }
 .container {
     display: flex; /* Use flexbox for layout */
