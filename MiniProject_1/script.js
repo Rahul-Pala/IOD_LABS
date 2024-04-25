@@ -1,13 +1,13 @@
 function fetchNews() {
     fetch('http://localhost:3000/Gelatolist')
     .then((response) => response.json())
-    .then((json) => {console.log(json);json.forEach(item =>addCard(item.flavor,item.description))}); //this works because the function newscars is not defined by let or const
+    .then((json) => {console.log(json);json.forEach(item =>addCard(item.flavor,item.description,item.image))}); //this works because the function newscars is not defined by let or const
 }
 fetchNews()
 
 
 
-    function addCard(text, body) {
+    function addCard(text, body, image) {
     // clone the template
     const template = 
     document.getElementById("card-template")
@@ -17,6 +17,8 @@ fetchNews()
     text;
     template.querySelector('.card-text').innerText = 
     body;
+    template.querySelector('.card-image').src = 
+    image;
     // include the populated template into the page
     document.querySelector('#card-list')
     .appendChild(template);
