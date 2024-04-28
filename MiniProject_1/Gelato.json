@@ -14,10 +14,11 @@
       },
       {
         "id": 3,
-        "flavor": "Strawberry",
-        "description": "Delicious strawberry gelato with real fruit chunks.",
-        "image": "./assets/image5.jpg"
+        "flavor": "Dark Chocolate",
+        "description": "Rich Dak chocolate gelato made with premium cocoa .",
+        "image": "./assets/imagechoc.jpg"
       },
+      
       {
         "id": 4,
         "flavor": "Pistachio",
@@ -116,7 +117,7 @@
       },
 
       {
-        "id": 19,
+        "id": 20,
         "flavor": "Coconut",
         "description": "Rich Coconut flavor from the Pacific Islands of Fiji",
         "image": "./assets/image.white.jpg"

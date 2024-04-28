@@ -239,5 +239,17 @@ height: 70%;
 opacity: 0.7;
 }
 
+@media only screen and (max-width: 665px) {
+    .h1 {
+       font-size: 30px;
+    }
+ }
 
+ .testimonial{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color:rgb(23, 40, 229) ;
+    border: 2px solid blueviolet;
+    box-sizing: border-box;
+ }
     
