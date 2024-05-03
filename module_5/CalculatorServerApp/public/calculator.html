@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <title>Calculator Example</title>
+  </head>
+  <body>
+    <div>
+      <label> Num1 :</label><input type="text" id="txtNum1">
+      <label> Num2 :</label><input type="text" id="txtNum2">
+    </div>
+    <div>
+      <select id="method">
+        <option>Add</option>
+        <option>Subtract</option>
+        <option>Multiply</option>
+        <option>Divide</option>
+      </select>
+    </div>
+    <div>
+      <button onclick="calculate()">calculate</button>
+    </div>
+    <div>
+      Result
+      <span id="result"></span>
+    </div>
+  </body>
+  <script>
+    function calculate()
+    {
+      let method = document.getElementById("method").value;
+      let Number1 = document.getElementById("txtNum1").value;
+      let Number2 = document.getElementById("txtNum2").value;
+    fetch(`http://127.0.0.1:3000/calculator/${method}?num1=${Number1}&num2=${Number2}`)
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("result").innerHTML = data.result;
+      })
+    };
+  </script>
+</html>
