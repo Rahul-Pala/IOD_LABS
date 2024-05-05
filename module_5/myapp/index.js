@@ -1,5 +1,12 @@
 const express = require('express');
-const testRoutes = 
+/*const swaggerUi = require('swagger-ui-express');    //Exercise 8 Part 1
+swaggerDocument = require('./swagger.json');
+app.use(
+ '/api-docs',
+ swaggerUi.serve,
+ swaggerUi.setup(swaggerDocument)
+);*/                              
+ 
 require('./routes/myapproutes') //pointing to roots
 
 const app = express()

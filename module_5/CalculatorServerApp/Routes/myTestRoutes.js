@@ -1,5 +1,5 @@
 const express = require ("express") //Import express
-
+const myCalculatorcontroller = require("../Exercise5_controllers/CalculatorController")
 const router = express.Router() //Create a Router
 
 router.get("/", (req, res) => {  //Use the router to add the Routes
@@ -10,36 +10,20 @@ router.get("/", (req, res) => {  //Use the router to add the Routes
 
 //EXERCISE 2 
 router.get("/add", (req, res) => {
-    let number1 = parseInt(req.query.num1);
-    let number2 = parseInt(req.query.num2);
-    let sum = number1 + number2
-    res.status(200)
-    res.json({result:sum})   //Calculator add method is added on the server side, not client side
+    myCalculatorcontroller.Add(req, res)
 }
 )
 
 router.get("/subtract", (req, res) => {
-    let number1 = parseInt(req.query.num1);
-    let number2 = parseInt(req.query.num2);
-    let subtraction = number1 - number2
-    res.status(200)
-    res.json({result:subtraction})
+    myCalculatorcontroller.Substract(req, res)
 })
 
 router.get("/multiply", (req, res) => {
-    let number1 = parseInt(req.query.num1);
-    let number2 = parseInt(req.query.num2);
-    let multiplication = number1 * number2
-    res.status(200)
-    res.json({result:multiplication})
+    myCalculatorcontroller.Multiply(req, res)
 })
 
 router.get("/divide", (req, res) => {
-    let number1 = parseInt(req.query.num1);
-    let number2 = parseInt(req.query.num2);
-    let division = number1 / number2
-    res.status(200)
-    res.json({result:division})
+    myCalculatorcontroller.Divide(req, res)
 })
 
 module.exports = router           //Export the router .. And in index.js you need to import the router
