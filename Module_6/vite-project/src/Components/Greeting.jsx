@@ -1,11 +1,10 @@
-function Greeting(props)  {/*Part 1*/}
+function Greeting(props)
 {
     return(
-<div>
-      {props.name ? <h2>Hello: {props.name}</h2> : <h2>Hello World!</h2>} {/*Part 2 and 3*/}
-      <br></br>
+     <div>
+      {props.name ? <h2>Hello: {props.name}</h2> : <h2>Hello World!</h2>}
       {props.children}
-</div>
+     </div>
 )
 }
 
