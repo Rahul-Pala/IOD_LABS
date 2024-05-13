@@ -15,6 +15,7 @@ import ComplexComment from './Components/ComplexComment'
 import Callout from './Components/Callout'
 import MoviesList from './Components/MoviesList'
 import BigCats from './Components/BigCats'
+import Greet from './ComponentsStudy/Greet'
 
 function App() {
   
@@ -44,6 +45,11 @@ const comment = {
 
   return (
     <div>
+      <Greet name="SRK" heroname="Badshah">
+      <p>This is children</p></Greet>
+      <Greet name="Rahul" heroname="Superman"/>
+      <Greet name="Spider" heroname="man"/>
+      <h2 >HELLO UNIVERSE</h2>
       <BigCats></BigCats>
       <MoviesList></MoviesList>
       <Callout
