@@ -16,6 +16,13 @@ import Callout from './Components/Callout'
 import MoviesList from './Components/MoviesList'
 import BigCats from './Components/BigCats'
 import Greet from './ComponentsStudy/Greet'
+import MoodChanger from './Components/MoodChanger'
+import MoodPractice from './Components/MoodPractice'
+import Emoji from './Components/Emoji'
+import BirthdayTranslator from './Components/BirthdayTranslator'
+import Books from './Components/Books'
+import Weather from './Components/Weather'
+import LoginForm from './Components/LoginForm'
 
 function App() {
   
@@ -45,6 +52,14 @@ const comment = {
 
   return (
     <div>
+      <LoginForm></LoginForm>
+      <BigCats></BigCats>
+      {/*<Weather></Weather>*/}
+      <Books></Books>
+      <BirthdayTranslator></BirthdayTranslator>
+      <Emoji></Emoji>
+      <MoodPractice></MoodPractice>
+      <MoodChanger></MoodChanger>
       <Greet name="SRK" heroname="Badshah">
       <p>This is children</p></Greet>
       <Greet name="Rahul" heroname="Superman"/>
