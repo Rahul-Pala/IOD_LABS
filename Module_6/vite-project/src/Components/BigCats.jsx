@@ -28,8 +28,9 @@ return(
     </ul>
   </div>
   <div>
-    <button onClick={() =>setCurrentCats([...currentCats].sort())}>Sort Alphabetically</button>
-    <button onClick={() =>setCurrentCats([...currentCats].reverse())}>Sort Reversing</button> 
+    <button onClick={() =>setCurrentCats([...cats].sort((cat1,cat2)=>cat1.name < cat2.name ? -1: 1))}>Sort Alphabetically</button>
+    <button onClick={() =>setCurrentCats([...cats].reverse())}>Sort Reversing</button>
+    <button onClick={() =>setCurrentCats([...cats].filter((latinName)=>latinName.startsWith('Panthera')))}>Filter</button>
   </div>
 </>
 )
