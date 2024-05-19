@@ -23,6 +23,13 @@ import BirthdayTranslator from './Components/BirthdayTranslator'
 import Books from './Components/Books'
 import Weather from './Components/Weather'
 import LoginForm from './Components/LoginForm'
+import LoginUncontrolledForm from './Components/LoginUncontrolledForm'
+import ErrorMessage from './Components/ErrorMessage'
+import Clock from './Components/Clock'
+import ClockDisplay from './Components/ClockDisplay'
+import DisplayNewsItems from './Components/DisplayNewsItems'
+import ActivityFinder from './Components/ActivityFinder'
+import BitcoinRates from './Components/BitcoinRates'
 
 function App() {
   
@@ -52,6 +59,13 @@ const comment = {
 
   return (
     <div>
+      <BitcoinRates></BitcoinRates>
+      <ActivityFinder></ActivityFinder>
+      <DisplayNewsItems></DisplayNewsItems>
+      <ClockDisplay></ClockDisplay>
+      <Clock></Clock>
+      {/* <ErrorMessage></ErrorMessage> */}
+      <LoginUncontrolledForm></LoginUncontrolledForm>
       <LoginForm></LoginForm>
       <BigCats></BigCats>
       {/*<Weather></Weather>*/}

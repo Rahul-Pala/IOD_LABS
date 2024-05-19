@@ -1,6 +1,7 @@
 import '../index.css'
 import SingleCat from './SingleCat';
 import { useState } from 'react';
+import AddCatForm from './AddCatForm';
 
 function BigCats() {
 
@@ -32,6 +33,8 @@ return(
     <button onClick={() =>setCurrentCats([...cats].reverse())}>Sort Reversing</button>
     <button onClick={() =>setCurrentCats([...cats].filter((latinName)=>latinName.startsWith('Panthera')))}>Filter</button>
   </div>
+
+  <AddCatForm></AddCatForm>
 </>
 )
 }
