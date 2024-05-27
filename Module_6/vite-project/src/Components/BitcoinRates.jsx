@@ -6,7 +6,7 @@ const currencies = ["USD", "AUD", "NZD", "GBP", "EUR", "SGD"];
 
 function BitcoinRates() {
   const [currency, setCurrency] = useState(currencies[0]);
-  const [exchangeRate, setExchangeRate] = useState(null);
+  const [bitcoinPrice, setBitcoinPrice] = useState(null);
 
   const options = currencies.map((curr) => (
     <option value={curr} key={curr}>
@@ -15,10 +15,11 @@ function BitcoinRates() {
   ));
 
   useEffect(() => {
-    fetch('https://api.coingecko.com/api/v3/exchange_rates')
+    fetch(`https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=${currency}`)
         .then(response => response.json())
         .then(json => {
-            setCurrency(json.currency);
+            setBitcoinPrice(json.bitcoin[currency.toLowerCase()])
+            console.log(json.bitcoin[currency.toLowerCase()])
         });
 }, [currency]);
   
@@ -31,6 +32,8 @@ function BitcoinRates() {
           {options}
         </select>
       </label>
+      <p>Bitcoin Price</p>
+      {bitcoinPrice}
     </div>
   );
 } 

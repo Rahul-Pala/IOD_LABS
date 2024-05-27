@@ -30,6 +30,11 @@ import ClockDisplay from './Components/ClockDisplay'
 import DisplayNewsItems from './Components/DisplayNewsItems'
 import ActivityFinder from './Components/ActivityFinder'
 import BitcoinRates from './Components/BitcoinRates'
+import RefCounter from './Components/RefCounter'
+import VideoPlayer from './Components/VideoPlayer'
+import ReducerCounter from './Components/ReducerCounter'
+import PostListReducer from './Components/PostListReducer'
+import SubscribeForm from './Components/SubscribeForm'
 
 function App() {
   
@@ -59,11 +64,16 @@ const comment = {
 
   return (
     <div>
+      <SubscribeForm></SubscribeForm>
+      <PostListReducer></PostListReducer>
+      <ReducerCounter></ReducerCounter>
+      <VideoPlayer></VideoPlayer>
+      <RefCounter></RefCounter>
       <BitcoinRates></BitcoinRates>
       <ActivityFinder></ActivityFinder>
-      <DisplayNewsItems></DisplayNewsItems>
-      <ClockDisplay></ClockDisplay>
-      <Clock></Clock>
+      {/* <DisplayNewsItems></DisplayNewsItems> */}
+      {/* <ClockDisplay></ClockDisplay> */}
+      {/* <Clock></Clock> */}
       {/* <ErrorMessage></ErrorMessage> */}
       <LoginUncontrolledForm></LoginUncontrolledForm>
       <LoginForm></LoginForm>
