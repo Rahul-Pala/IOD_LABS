@@ -12,8 +12,8 @@ function App() {
   return (
     <>
     <BitcoinRatesEx2></BitcoinRatesEx2>
-    <BitcoinRates></BitcoinRates>
-    <UseOnline></UseOnline>
+    {/* <BitcoinRates></BitcoinRates> */}
+    {/* <UseOnline></UseOnline> */}
     </>
   )
 }

@@ -1,8 +1,13 @@
+import { useState } from "react";
+import { useEffect } from "react";
+
 // hooks are usually named exports rather than default
 export function useData(url) {
     // state variable for holding fetched json data
     const [data, setData] = useState(null);
-
+//alert("called")
+const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
+url=corsAnywhereUrl+url
     useEffect(() => {
         if (url) {
             let ignore = false;

@@ -12,6 +12,12 @@ function BitcoinRatesEx2() {
   const data = useData('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies='+
   'currency='+currency);
 
+  const options = currencies.map((curr) => (
+    <option value={curr} key={curr}>
+      {curr}
+    </option>
+  ));
+console.log(data)
   const bitcoinPrice = data ? data.bitcoinPrice : 'not found'
 
   return (
