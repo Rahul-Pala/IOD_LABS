@@ -9,8 +9,7 @@ function BitcoinRatesEx2() {
   const [currency, setCurrency] = useState(currencies[0]);
  // const [bitcoinPrice, setBitcoinPrice] = useState(null);
 
-  const data = useData('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies='+
-  'currency='+currency);
+  const data = useData('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies='+currency);
 
   const options = currencies.map((curr) => (
     <option value={curr} key={curr}>
@@ -18,8 +17,8 @@ function BitcoinRatesEx2() {
     </option>
   ));
 console.log(data)
-  const bitcoinPrice = data ? data.bitcoinPrice : 'not found'
-
+  const bitcoinPrice = data ? (data.bitcoin!=null? data.bitcoin[currency.toLowerCase()]: ""): 'not found'
+  //alert(bitcoinPrice)
   return (
     <div className="BitcoinRates componentBox">
       <h3>Bitcoin Exchange Rate</h3>

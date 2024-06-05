@@ -7,7 +7,7 @@ export function useData(url) {
     const [data, setData] = useState(null);
 //alert("called")
 const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
-url=corsAnywhereUrl+url
+url = corsAnywhereUrl + url
     useEffect(() => {
         if (url) {
             let ignore = false;
