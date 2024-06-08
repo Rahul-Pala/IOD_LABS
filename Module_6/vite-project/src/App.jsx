@@ -72,8 +72,8 @@ const comment = {
       <BitcoinRates></BitcoinRates>
       <ActivityFinder></ActivityFinder>
       {/* <DisplayNewsItems></DisplayNewsItems> */}
-      {/* <ClockDisplay></ClockDisplay> */}
-      {/* <Clock></Clock> */}
+      <ClockDisplay></ClockDisplay> 
+      <Clock></Clock> *
       {/* <ErrorMessage></ErrorMessage> */}
       <LoginUncontrolledForm></LoginUncontrolledForm>
       <LoginForm></LoginForm>
