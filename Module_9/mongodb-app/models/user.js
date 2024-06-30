@@ -2,13 +2,21 @@ const mongoose = require("mongoose"); //importing mongoose
 const Schema = mongoose.Schema;       //creating schema
 
 const userSchema = new Schema({ //You are creating a new schema by using new schema
- firstName: { type: String, trim: true, required: true },
- lastName: { type: String, trim: true, required: true },
- emailId: { type: String, trim: true, required: true, unique: true },
- password: { type: String },
+ firstName: { type: String, default: "Rahul" },
+ lastName: { type: String, default: "Pala" },
+ emailId: { type: String, default: "rahulpala@melbourneuni.com" },
+ password: { type: String, default: "xxxxxx" },
  createdAt: { type: Date, default: Date.now },
  updatedAt: { type: Date, default: Date.now }
  });
+
+ //Example of how to make foreign key
+//  const postSchema = new Schema({ //You are creating a new schema by using new schema
+//     postTitle: { type: String, default: "Rahul" },
+//     postDescription: { type: String, default: "Pala" },
+//      // foreign key needs ObjectId type and a 'ref' to the referenced schema
+//     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'user' }, 
+//  })
 
  module.exports = mongoose.model("user", userSchema);
 

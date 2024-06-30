@@ -4,6 +4,8 @@ let userRoutes = require('./routes/userRoutes');
 require("dotenv").config();
 let dbConnect = require("./dbconnect");
 
+app.use(express.json()) //This is required for posting data
+
 app.use('/api/users', userRoutes);
 
 app.get("/", (req, res) => {
