@@ -14,12 +14,21 @@ router.post("/create", (req, res) => {
   Controllers.cartoonController.createCartoon(req.body, res);
 });
 
+// Adds a POST route to create a new user
+router.post("/initiate", (req,res) => {
+  Controllers.initiateController.storeCartoons(res);
+});
+
 router.put('/:id', (req, res) => {
     Controllers.cartoonController.updateCartoon(req, res)
    })
    
    router.delete('/:id', (req, res) => {
     Controllers.cartoonController.deleteCartoon(req, res)
+   })
+
+   router.delete('/', (req, res) => {
+    Controllers.cartoonController.deleteAllCartoon(req, res)
    })
 
 module.exports = router;

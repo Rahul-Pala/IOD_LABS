@@ -1,4 +1,6 @@
 module.exports = {
-    cartoonController: require('./cartoonController')
+    cartoonController: require('./cartoonController'),
+    initiateController: require('./initiateController')
    }
+
    

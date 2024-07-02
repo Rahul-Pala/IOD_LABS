@@ -3,6 +3,7 @@ const app = express()
 let cartoonRoutes = require('./routes/cartoonRoutes');
 require("dotenv").config();
 let dbConnect = require("./dbConnect");
+app.use(express.json()); //Use to do put method.
 
 app.use('/api/cartoons', cartoonRoutes);
 
